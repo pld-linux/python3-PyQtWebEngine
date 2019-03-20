@@ -12,12 +12,12 @@
 Summary:	Python 2 bindings for the Qt5WebEngine module
 Summary(pl.UTF-8):	Wiązania Pythona 2 do modułu Qt5WebEngine
 Name:		python-%{module}
-Version:	5.12
+Version:	5.12.1
 Release:	1
 License:	GPL v3
 Group:		Libraries/Python
 Source0:	https://www.riverbankcomputing.com/static/Downloads/PyQtWebEngine/PyQtWebEngine_gpl-%{version}.tar.gz
-# Source0-md5:	06ce2b9a100cd5852581edb4f8133e20
+# Source0-md5:	3328d0ccc2649d65846524d70fd0d0c5
 Patch0:		install.patch
 URL:		http://www.riverbankcomputing.com/software/pyqtwebengine/
 BuildRequires:	Qt5WebEngine-devel >= %{qt_ver}}
@@ -141,6 +141,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{py_sitedir}/PyQt5/QtWebEngine.so
 %attr(755,root,root) %{py_sitedir}/PyQt5/QtWebEngineCore.so
 %attr(755,root,root) %{py_sitedir}/PyQt5/QtWebEngineWidgets.so
+%{py_sitedir}/PyQt5/QtWebEngine.pyi
+%{py_sitedir}/PyQt5/QtWebEngineCore.pyi
+%{py_sitedir}/PyQt5/QtWebEngineWidgets.pyi
 %endif
 
 %if %{with python3}
@@ -149,6 +152,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{py3_sitedir}/PyQt5/QtWebEngine.so
 %attr(755,root,root) %{py3_sitedir}/PyQt5/QtWebEngineCore.so
 %attr(755,root,root) %{py3_sitedir}/PyQt5/QtWebEngineWidgets.so
+%{py3_sitedir}/PyQt5/QtWebEngine.pyi
+%{py3_sitedir}/PyQt5/QtWebEngineCore.pyi
+%{py3_sitedir}/PyQt5/QtWebEngineWidgets.pyi
 %endif
 
 %files -n sip-PyQtWebEngine
