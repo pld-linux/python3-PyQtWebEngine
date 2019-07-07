@@ -12,12 +12,12 @@
 Summary:	Python 2 bindings for the Qt5WebEngine module
 Summary(pl.UTF-8):	Wiązania Pythona 2 do modułu Qt5WebEngine
 Name:		python-%{module}
-Version:	5.12.1
+Version:	5.13.0
 Release:	1
 License:	GPL v3
 Group:		Libraries/Python
-Source0:	https://www.riverbankcomputing.com/static/Downloads/PyQtWebEngine/PyQtWebEngine_gpl-%{version}.tar.gz
-# Source0-md5:	3328d0ccc2649d65846524d70fd0d0c5
+Source0:	https://www.riverbankcomputing.com/static/Downloads/PyQtWebEngine/%{version}/PyQtWebEngine_gpl-%{version}.tar.gz
+# Source0-md5:	75ed399adfe04858e6670325fbd2be2c
 Patch0:		install.patch
 URL:		http://www.riverbankcomputing.com/software/pyqtwebengine/
 BuildRequires:	Qt5WebEngine-devel >= %{qt_ver}}
