@@ -22,8 +22,10 @@ Patch0:		install.patch
 URL:		http://www.riverbankcomputing.com/software/pyqtwebengine/
 BuildRequires:	Qt5WebEngine-devel >= %{qt_ver}}
 BuildRequires:	pkgconfig
+BuildRequires:	python-PyQt5
 BuildRequires:	python-PyQt5-sip >= %{sip_ver}
 BuildRequires:	python-sip-devel >= %{sip_ver}
+BuildRequires:	python3-PyQt5
 BuildRequires:	python3-PyQt5-sip >= %{sip_ver}
 BuildRequires:	python3-sip-devel >= %{sip_ver}
 BuildRequires:	qt5-build >= %{qt_ver}
