@@ -10,7 +10,7 @@ Summary:	Python bindings for the Qt5WebEngine module
 Summary(pl.UTF-8):	Wiązania Pythona do modułu Qt5WebEngine
 Name:		python3-%{module}
 Version:	5.15.6
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/P/PyQtWebEngine/PyQtWebEngine-%{version}.tar.gz
@@ -40,7 +40,7 @@ Summary:	SIP files needed to build bindings for Qt5WebEngine
 Summary(pl.UTF-8):	Pliki SIP potrzebne do budowania wiązań do Qt5WebEngine
 Group:		Development/Languages/Python
 Requires:	python3-PyQt5-sip >= 2:12.11.0
-Requires:	sip >= %{sip_ver}
+Requires:	sip6 >= %{sip_ver}
 
 %description -n sip-PyQtWebEngine
 SIP files needed to build bindings for Qt5WebEngine.
