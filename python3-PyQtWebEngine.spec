@@ -19,11 +19,11 @@ URL:		http://www.riverbankcomputing.com/software/pyqtwebengine/
 BuildRequires:	Qt5WebEngine-devel >= %{qt_ver}
 BuildRequires:	pkgconfig
 BuildRequires:	python3-PyQt5
+BuildRequires:	python3-PyQt5-devel
 BuildRequires:	qt5-build >= %{qt_ver}
 BuildRequires:	qt5-qmake >= %{qt_ver}
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
-BuildRequires:	sip-PyQt5 >= 5.15.7
 BuildRequires:	sip6 >= %{sip_ver}
 Requires:	python3-libs
 Obsoletes:	python-PyQtWebEngine < 5.15.6
