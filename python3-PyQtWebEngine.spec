@@ -26,12 +26,13 @@ BuildRequires:	python3-PyQt-builder >= 1.9
 BuildRequires:	python3-PyQt-builder < 2
 BuildRequires:	python3-PyQt5 >= 5.15.4
 BuildRequires:	python3-PyQt5-devel >= 5.15.4
+BuildRequires:	python3-devel >= 1:3.8
 BuildRequires:	qt5-build >= %{qt_ver}
 BuildRequires:	qt5-qmake >= %{qt_ver}
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRequires:	sip6 >= %{sip_ver}
-Requires:	python3-libs
+Requires:	python3-libs >= 1:3.8
 %if %{with obsolete_py2}
 Obsoletes:	python-PyQtWebEngine < 5.15.6
 %endif
